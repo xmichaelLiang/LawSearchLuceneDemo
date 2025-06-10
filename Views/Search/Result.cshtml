@@ -1,0 +1,11 @@
+﻿@model List<LawClause>
+
+<h2>搜尋結果</h2>
+
+@foreach (var clause in Model)
+{
+    <div>
+        <h4>@clause.Title</h4>
+        <p>@clause.Content</p>
+    </div>
+}
